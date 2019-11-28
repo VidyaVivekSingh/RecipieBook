@@ -1,0 +1,26 @@
+<!-- <div class="row">
+    <div class="col-md-5">
+        <app-recipies-list (selectedRecipie)="recipieSelected = $event"></app-recipies-list>
+    </div>
+    <div class="col-md-7">
+        <app-recipie-detail *ngIf="recipieSelected; else infoText" [recipieWasSelected]="recipieSelected">
+        </app-recipie-detail>
+        <ng-template #infoText>
+            <p>Please Select A Recipie..!</p>
+        </ng-template>
+    </div>
+</div> -->
+
+<!-- After using Service -->
+<div class="row">
+    <div class="col-md-5">
+        <app-recipies-list></app-recipies-list>
+    </div>
+    <div class="col-md-7">
+        <app-recipie-detail *ngIf="recipieSelected; else infoText" [recipieWasSelected]="recipieSelected">
+        </app-recipie-detail>
+        <ng-template #infoText>
+            <p>Please Select A Recipie..!</p>
+        </ng-template>
+    </div>
+</div>
